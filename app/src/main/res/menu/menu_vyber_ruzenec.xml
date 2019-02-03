@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/action_text_size_change"-->
+        <!--android:title="@string/action_change_text_size"-->
+        <!--app:showAsAction="never"/>-->
+
+    <item android:id="@+id/action_na_uvod"
+        android:title="@string/action_na_uvod"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_jak_se_pouziva"
+        android:title="@string/action_jak_se_pouziva"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_jak_se_modli_ruzenec"
+        android:title="@string/action_jak_se_modli_ruzenec"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_dalsi_modlitby"
+        android:title="@string/action_dalsi_modlitby"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_slovo_papeze"
+        android:title="@string/action_slovo_papeze"
+        app:showAsAction="never"/>
+
+</menu>

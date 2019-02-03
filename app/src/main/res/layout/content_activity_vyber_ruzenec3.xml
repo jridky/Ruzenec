@@ -1,0 +1,246 @@
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/constraint"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="64dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHlavniPomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+    <ImageView
+        android:id="@+id/obrazekRuzence"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginTop="146dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHlavniPomer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineActionBar"
+        app:srcCompat="@drawable/ruzenec" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewRadost"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardBackgroundColor="@color/radostBar"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:contentPadding="@dimen/card_view_padding"
+        android:layout_marginBottom="@dimen/mensi_mezera_mezi_tlacitky"
+        android:layout_marginEnd="@dimen/mensi_mezera_mezi_tlacitky"
+        android:layout_marginStart="@dimen/vetsi_mezera_mezi_tlacitky"
+        android:layout_marginTop="@dimen/vetsi_mezera_mezi_tlacitky"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewBolest"
+        app:layout_constraintEnd_toStartOf="@+id/cardViewSvetlo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHlavniPomer"
+        android:onClick="radost">
+
+        <ImageView
+            android:id="@+id/ivRadost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/kometa" />
+
+        <TextView
+            android:id="@+id/tvRadostDen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/po_so"
+            android:textSize="@dimen/velikost_textu_den"/>
+
+        <TextView
+            android:id="@+id/tvRadost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/radost"
+            android:textSize="@dimen/velikost_nazvu_ruzence"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewBolest"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardBackgroundColor="@color/bolestBar"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:contentPadding="@dimen/card_view_padding"
+        android:layout_marginBottom="@dimen/vetsi_mezera_mezi_tlacitky"
+        android:layout_marginEnd="@dimen/mensi_mezera_mezi_tlacitky"
+        android:layout_marginStart="@dimen/vetsi_mezera_mezi_tlacitky"
+        android:layout_marginTop="@dimen/mensi_mezera_mezi_tlacitky"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineSpodniMezera"
+        app:layout_constraintEnd_toStartOf="@id/cardViewSlava"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewRadost"
+        android:onClick="bolest">
+
+        <ImageView
+            android:id="@+id/ivBolest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/trnova_koruna" />
+
+        <TextView
+            android:id="@+id/tvBolestDen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/ut_pa"
+            android:textSize="@dimen/velikost_textu_den"/>
+
+        <TextView
+            android:id="@+id/tvBolest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/bolest"
+            android:textSize="@dimen/velikost_nazvu_ruzence"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewSlava"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardBackgroundColor="@color/slavaBar"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:contentPadding="@dimen/card_view_padding"
+        android:layout_marginBottom="@dimen/vetsi_mezera_mezi_tlacitky"
+        android:layout_marginEnd="@dimen/vetsi_mezera_mezi_tlacitky"
+        android:layout_marginStart="@dimen/mensi_mezera_mezi_tlacitky"
+        android:layout_marginTop="@dimen/mensi_mezera_mezi_tlacitky"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineSpodniMezera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardViewBolest"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewSvetlo"
+        android:onClick="slava">
+
+        <ImageView
+            android:id="@+id/ivSlava"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/victory"
+            android:textSize="@dimen/velikost_textu_den"/>
+
+        <TextView
+            android:id="@+id/tvSlavaDen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/st_ne"
+            android:textSize="@dimen/velikost_textu_den"/>
+
+        <TextView
+            android:id="@+id/tvSlava"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/slava"
+            android:textSize="@dimen/velikost_nazvu_ruzence"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewSvetlo"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardBackgroundColor="@color/svetloBar"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:contentPadding="@dimen/card_view_padding"
+        android:layout_marginBottom="@dimen/mensi_mezera_mezi_tlacitky"
+        android:layout_marginEnd="@dimen/vetsi_mezera_mezi_tlacitky"
+        android:layout_marginStart="@dimen/mensi_mezera_mezi_tlacitky"
+        android:layout_marginTop="@dimen/vetsi_mezera_mezi_tlacitky"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewSlava"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardViewRadost"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHlavniPomer"
+        android:onClick="svetlo">
+
+        <ImageView
+            android:id="@+id/ivSvetlo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/svetlo2" />
+
+        <TextView
+            android:id="@+id/tvSvetloDen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/ct"
+            android:textSize="@dimen/velikost_textu_den"/>
+
+        <TextView
+            android:id="@+id/tvSvetlo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/svetlo"
+            android:textSize="@dimen/velikost_nazvu_ruzence"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineSpodniMezera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="64dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

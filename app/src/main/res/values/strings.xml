@@ -1,0 +1,813 @@
+<resources>
+    <string name="app_name">Růženec</string>
+    <string name="test_text">Nastavte velikost tak, aby se vám tento text dobře četl.</string>
+    <string name="change_text_size_title">Změna velikosti textu</string>
+    <string name="about_app_bar">O aplikaci</string>
+    <string name="slovo_papeze_bar">Slovo papeže</string>
+    <string name="dalsi_modlitby_bar">Další modlitby</string>
+
+    <string name="po_so">pondělí a sobota</string>
+    <string name="ut_pa">úterý a pátek</string>
+    <string name="st_ne">středa a neděle</string>
+    <string name="ct">čtvrtek</string>
+
+    <string name="radost">RADOSTNÝ</string>
+    <string name="bolest">BOLESTNÝ</string>
+    <string name="slava">SLAVNÝ</string>
+    <string name="svetlo">SVĚTLA</string>ta
+    <string name="modlitby">Otče náš; desetkrát Zdrávas, Maria; Sláva Otci\n</string>
+
+    <string name="title_activity_desatek">ActivityDesatek</string>
+
+    <string name="zobrazit_skryt_text">zobrazit/schovat text</string>
+    <string name="generuj_desatek">vytvořit desátek z tohoto tajemství</string>
+
+    <string name="action_jak_se_modli_ruzenec">Jak se modlí růženec</string>
+    <string name="action_slovo_papeze">Slovo papeže Jana Pavla II.</string>
+    <string name="action_dalsi_modlitby">Další vhodné modlitby</string>
+    <string name="action_o_aplikaci">O aplikaci</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_change_text_size">Změnit velikost textu</string>
+    <string name="action_na_uvod">Na úvod</string>
+    <string name="action_jak_se_pouziva">Jak se aplikace používá</string>
+
+    <string name="typ_textu">typ textu</string>
+
+    <string name="toast_info_dalsi_desatek">Pro další tajemství táhnětě prstem doleva</string>
+    <string name="arrow">
+        <![CDATA[
+        <h1>→</h1>
+          ]]></string>
+
+    <string name="slovo_papeze">
+		        <![CDATA[
+		<h3>Slovo papeže Jana Pavla II.</h3>
+Svatý Jan Pavel II. ve svém apoštolském listu o modlitbě svatého růžence Rosarium Virginis Mariae (z
+roku 2002) vybízel k znovuobjevení této modlitby. Modlit se růženec znamená přicházet do „školy“
+Ježíšovy matky Marie, kde se pod jejím mateřským dohledem učíme číst vtělené Slovo věčného Otce, vnikat
+do jeho tajemství a stále více se mu podobat. Jako ona nasloucháme Božímu Slovu, uchováváme ho v srdci a
+přemýšlíme o něm. Ať se nám chvíle, v nichž společně s Marií kontemplujeme tvář jejího Syna, stanou
+pramenem pokoje, radosti a posily na naší každodenní cestě za Kristem.
+<br><br>
+<i>
+Kontemplace Ježíšova narození nás učí chápat posvátnost života. Pohled na dům v Nazaretě zjevuje prvotní
+pravdu o rodině podle Božího plánu. Nasloucháním Mistrovým slovům v tajemstvích jeho veřejného života
+nacházíme světlo ke vstupu do Božího království, a kráčíme-li s ním na Kalvárii, pochopíme smysl
+spasitelného utrpení. A konečně, kontemplujeme-li Krista a jeho Matku ve slávě, spatříme cíl, k němuž jsme
+všichni povoláni, jestliže se necháme uzdravit a proměnit Duchem Svatým.
+<br><br>
+
+Rozjímat s růžencem znamená složit své břemeno před milosrdné srdce Krista a jeho Matky. Když přemítám
+nad zkouškami, které mě neminuly ani v mé službě Petrova nástupce, cítím potřebu opět zdůraznit, či spíše
+obrátit se na všechny s vřelou výzvu, aby s růžencem učinili osobní zkušenost: ano, tato modlitba skutečně
+„tepe v rytmu lidského života“, aby jej sladila s rytmem života božského, v radostném společenství
+Nejsvětější Trojice – vytouženým cílem našeho bytí.
+<br><br>
+
+Milovaní bratři a sestry! Tak jednoduchá a zároveň tolik bohatá modlitba, jakou růženec je, si skutečně
+zaslouží, aby byla znovuobjevena.
+</i>
+		        ]]>
+	</string>
+
+    <string name="dalsi_modlitby">
+		<![CDATA[
+<h3>Některé další vhodné modlitby</h3>
+<b>Litanie loretánská</b><br>
+Pane, smiluj se. <i>Pane, smiluj se.</i><br>
+Kriste, smiluj se. <i>Kriste, smiluj se.</i><br>
+Pane, smiluj se. <i>Pane, smiluj se.</i><br><br>
+
+Bože, náš nebeský Otče, <i>smiluj se nad námi.</i><br>
+Bože, Synu, Vykupiteli světa, <i>smiluj se nad námi.</i><br>
+Bože, Duchu Svatý, <i>smiluj se nad námi.</i><br>
+Bože v Trojici jediný, <i>smiluj se nad námi.</i><br><br>
+
+Svatá Maria, <i>oroduj za nás.</i><br>
+Svatá Boží Rodičko, <i>oroduj za nás.</i><br>
+Svatá Panno panen, <i>oroduj za nás.</i><br>
+Matko Kristova, <i>oroduj za nás.</i><br>
+Matko církve, <i>oroduj za nás.</i><br>
+Matko božské milosti, <i>oroduj za nás.</i><br>
+Matko nejčistší, <i>oroduj za nás.</i><br>
+Matko nejcudnější, <i>oroduj za nás.</i><br>
+Matko neporušená, <i>oroduj za nás.</i><br>
+Matko neposkvrněná, <i>oroduj za nás.</i><br>
+Matko láskyhodná, <i>oroduj za nás.</i><br>
+Matko obdivuhodná, <i>oroduj za nás.</i><br>
+Matko dobré rady, <i>oroduj za nás.</i><br>
+Matko Stvořitelova, <i>oroduj za nás.</i><br>
+Matko Spasitelova, <i>oroduj za nás.</i><br>
+Panno nejmoudřejší, <i>oroduj za nás.</i><br>
+Panno úctyhodná, <i>oroduj za nás.</i><br>
+Panno chvályhodná, <i>oroduj za nás.</i><br>
+Panno mocná, <i>oroduj za nás.</i><br>
+Panno dobrotivá, <i>oroduj za nás.</i><br>
+Panno věrná, <i>oroduj za nás.</i><br>
+Zrcadlo spravedlnosti, <i>oroduj za nás.</i><br>
+Trůne moudrosti, <i>oroduj za nás.</i><br>
+Příčino naší radosti, <i>oroduj za nás.</i><br>
+Stánku Ducha Svatého, <i>oroduj za nás.</i><br>
+Stánku vyvolený, <i>oroduj za nás.</i><br>
+Stánku zbožnosti, <i>oroduj za nás.</i><br>
+Růže tajemná, <i>oroduj za nás.</i><br>
+Věži Davidova, <i>oroduj za nás.</i><br>
+Věži z kosti slonové, <i>oroduj za nás.</i><br>
+Dome zlatý, <i>oroduj za nás.</i><br>
+Archo úmluvy, <i>oroduj za nás.</i><br>
+Bráno nebeská, <i>oroduj za nás.</i><br>
+Hvězdo jitřní, <i>oroduj za nás.</i><br>
+Uzdravení nemocných, <i>oroduj za nás.</i><br>
+Útočiště hříšníků, <i>oroduj za nás.</i><br>
+Těšitelko zarmoucených, <i>oroduj za nás.</i><br>
+Pomocnice křesťanů, <i>oroduj za nás.</i><br>
+Královno andělů, <i>oroduj za nás.</i><br>
+Královno patriarchů, <i>oroduj za nás.</i><br>
+Královno proroků, <i>oroduj za nás.</i><br>
+Královno apoštolů, <i>oroduj za nás.</i><br>
+Královno mučedníků, <i>oroduj za nás.</i><br>
+Královno vyznavačů, <i>oroduj za nás.</i><br>
+Královno všech svatých, <i>oroduj za nás.</i><br>
+Královno počatá bez poskvrny hříchu dědičného, <i>oroduj za nás.</i><br>
+Královno nanebevzatá, <i>oroduj za nás.</i><br>
+Královno posvátného růžence, <i>oroduj za nás.</i><br>
+Královno rodin, <i>oroduj za nás.</i><br>
+Královno míru. <i>oroduj za nás.</i><br><br>
+
+Beránku Boží, který snímáš hříchy světa,<br>
+<i>smiluj se nad námi.</i><br>
+Beránku Boží, který snímáš hříchy světa,<br>
+<i>smiluj se nad námi.</i><br>
+Beránku Boží, který snímáš hříchy světa,<br>
+<i>smiluj se nad námi.</i><br><br>
+
+<b>K.</b> Oroduj za nás, svatá Boží Rodičko,<br>
+<b>L.</b> <i>aby nám Kristus dal účast na svých zaslíbeních.</i><br><br>
+
+<b>Pod ochranu tvou</b><br>
+Pod ochranu tvou se utíkáme,
+svatá Boží Rodičko.
+Neodmítej naše prosby v našich potřebách,
+ale ode všeho nebezpečí vysvoboď nás vždycky,
+Panno slavná a požehnaná!
+Paní naše,
+prostřednice naše,
+orodovnice naše,
+u Syna nám smilování vypros,
+Synu svému nás doporuč,
+k Synu svému nás doprovoď.<br><br>
+
+<b>Zdráva buď, Královno nebe</b><br>
+Zdráva buď, Královno nebe,
+zdrávas, andělé slaví tebe,
+zdrávas, Máti, zdrávas, bráno,
+z níž je světu světlo dáno.
+Plesej, Panno oslavená,
+nade všechny vyvolená,
+zdráva buď, lilie čistá,
+přimlouvej se za nás u Krista.<br><br>
+
+<b>Pamatuj, láskyplná Panno Maria</b>
+Pamatuj, láskyplná Panno Maria,
+že od věků nebylo slýcháno,
+abys opustila toho,
+kdo se utíkal pod Tvou ochranu,
+kdo vzýval Tvou moc,
+kdo prosil o Tvou přímluvu.
+V této důvěře se také já k Tobě utíkám,
+Panno panen a Matko,
+k Tobě přicházím, před Tebou stojím,
+já kající hříšník.
+Dobrá Matko Vtěleného Slova,
+neodvracej se od mých slov,
+ale slyš je a vyslyš.
+Amen.
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_litanie_nadpis">
+		<![CDATA[
+		    <b>Litanie loretánská</b>
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_litanie">
+		<![CDATA[
+Pane, smiluj se. <i>Pane, smiluj se.</i><br>
+Kriste, smiluj se. <i>Kriste, smiluj se.</i><br>
+Pane, smiluj se. <i>Pane, smiluj se.</i><br><br>
+
+Bože, náš nebeský Otče, <i>smiluj se nad námi.</i><br>
+Bože, Synu, Vykupiteli světa, <i>smiluj se nad námi.</i><br>
+Bože, Duchu Svatý, <i>smiluj se nad námi.</i><br>
+Bože v Trojici jediný, <i>smiluj se nad námi.</i><br><br>
+
+Svatá Maria, <i>oroduj za nás.</i><br>
+Svatá Boží Rodičko, <i>oroduj za nás.</i><br>
+Svatá Panno panen, <i>oroduj za nás.</i><br>
+Matko Kristova, <i>oroduj za nás.</i><br>
+Matko církve, <i>oroduj za nás.</i><br>
+Matko božské milosti, <i>oroduj za nás.</i><br>
+Matko nejčistší, <i>oroduj za nás.</i><br>
+Matko nejcudnější, <i>oroduj za nás.</i><br>
+Matko neporušená, <i>oroduj za nás.</i><br>
+Matko neposkvrněná, <i>oroduj za nás.</i><br>
+Matko láskyhodná, <i>oroduj za nás.</i><br>
+Matko obdivuhodná, <i>oroduj za nás.</i><br>
+Matko dobré rady, <i>oroduj za nás.</i><br>
+Matko Stvořitelova, <i>oroduj za nás.</i><br>
+Matko Spasitelova, <i>oroduj za nás.</i><br>
+Panno nejmoudřejší, <i>oroduj za nás.</i><br>
+Panno úctyhodná, <i>oroduj za nás.</i><br>
+Panno chvályhodná, <i>oroduj za nás.</i><br>
+Panno mocná, <i>oroduj za nás.</i><br>
+Panno dobrotivá, <i>oroduj za nás.</i><br>
+Panno věrná, <i>oroduj za nás.</i><br>
+Zrcadlo spravedlnosti, <i>oroduj za nás.</i><br>
+Trůne moudrosti, <i>oroduj za nás.</i><br>
+Příčino naší radosti, <i>oroduj za nás.</i><br>
+Stánku Ducha Svatého, <i>oroduj za nás.</i><br>
+Stánku vyvolený, <i>oroduj za nás.</i><br>
+Stánku zbožnosti, <i>oroduj za nás.</i><br>
+Růže tajemná, <i>oroduj za nás.</i><br>
+Věži Davidova, <i>oroduj za nás.</i><br>
+Věži z kosti slonové, <i>oroduj za nás.</i><br>
+Dome zlatý, <i>oroduj za nás.</i><br>
+Archo úmluvy, <i>oroduj za nás.</i><br>
+Bráno nebeská, <i>oroduj za nás.</i><br>
+Hvězdo jitřní, <i>oroduj za nás.</i><br>
+Uzdravení nemocných, <i>oroduj za nás.</i><br>
+Útočiště hříšníků, <i>oroduj za nás.</i><br>
+Těšitelko zarmoucených, <i>oroduj za nás.</i><br>
+Pomocnice křesťanů, <i>oroduj za nás.</i><br>
+Královno andělů, <i>oroduj za nás.</i><br>
+Královno patriarchů, <i>oroduj za nás.</i><br>
+Královno proroků, <i>oroduj za nás.</i><br>
+Královno apoštolů, <i>oroduj za nás.</i><br>
+Královno mučedníků, <i>oroduj za nás.</i><br>
+Královno vyznavačů, <i>oroduj za nás.</i><br>
+Královno všech svatých, <i>oroduj za nás.</i><br>
+Královno počatá bez poskvrny hříchu dědičného, <i>oroduj za nás.</i><br>
+Královno nanebevzatá, <i>oroduj za nás.</i><br>
+Královno posvátného růžence, <i>oroduj za nás.</i><br>
+Královno rodin, <i>oroduj za nás.</i><br>
+Královno míru. <i>oroduj za nás.</i><br><br>
+
+Beránku Boží, který snímáš hříchy světa,<br>
+<i>smiluj se nad námi.</i><br>
+Beránku Boží, který snímáš hříchy světa,<br>
+<i>smiluj se nad námi.</i><br>
+Beránku Boží, který snímáš hříchy světa,<br>
+<i>smiluj se nad námi.</i><br><br>
+
+<b>K.</b> Oroduj za nás, svatá Boží Rodičko,<br>
+<b>L.</b> <i>aby nám Kristus dal účast na svých zaslíbeních.</i>
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_pod_ochranu_nadpis">
+		<![CDATA[
+		    <b>Pod ochranu tvou</b>
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_pod_ochranu">
+		<![CDATA[
+Pod ochranu tvou se utíkáme,
+svatá Boží Rodičko.
+Neodmítej naše prosby v našich potřebách,
+ale ode všeho nebezpečí vysvoboď nás vždycky,
+Panno slavná a požehnaná!
+Paní naše,
+prostřednice naše,
+orodovnice naše,
+u Syna nám smilování vypros,
+Synu svému nás doporuč,
+k Synu svému nás doprovoď.
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_zdrava_bud_nadpis">
+		<![CDATA[
+		    <b>Zdráva buď, Královno nebe</b>
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_zdrava_bud">
+		<![CDATA[
+Zdráva buď, Královno nebe,
+zdrávas, andělé slaví tebe,
+zdrávas, Máti, zdrávas, bráno,
+z níž je světu světlo dáno.
+Plesej, Panno oslavená,
+nade všechny vyvolená,
+zdráva buď, lilie čistá,
+přimlouvej se za nás u Krista.
+
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_pamatuj_nadpis">
+		<![CDATA[
+		    <b>Pamatuj, láskyplná Panno Maria</b>
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_pamatuj">
+		<![CDATA[
+Pamatuj, láskyplná Panno Maria,
+že od věků nebylo slýcháno,
+abys opustila toho,
+kdo se utíkal pod Tvou ochranu,
+kdo vzýval Tvou moc,
+kdo prosil o Tvou přímluvu.
+V této důvěře se také já k Tobě utíkám,
+Panno panen a Matko,
+k Tobě přicházím, před Tebou stojím,
+já kající hříšník.
+Dobrá Matko Vtěleného Slova,
+neodvracej se od mých slov,
+ale slyš je a vyslyš.
+Amen.
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_zdravas_kralovno_nadpis">
+		<![CDATA[
+		    <b>Zdrávas, Královno</b>
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_zdravas_kralovno">
+		<![CDATA[
+Zdrávas, Královno, Matko milosrdenství,
+živote, sladkosti a naděje naše, buď zdráva!
+K tobě voláme, vyhnaní synové Evy,
+k tobě vzdycháme, lkajíce a plačíce
+v tomto slzavém údolí.
+A proto, orodovnice naše,
+obrať k nám své milosrdné oči
+a Ježíše, požehnaný plod života svého,
+nám po tomto putování ukaž,
+ó milostivá, ó přívětivá,
+ó přesladká Panno Maria!
+		]]>
+	</string>
+
+    <string name="dalsi_modlitby_svaty_michaeli_novejsi_nadpis">
+        <![CDATA[
+<b>Svatý Michaeli, archanděli (novější verze)</b>
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_svaty_michaeli_novejsi">
+    <![CDATA[
+Svatý Michaeli, archanděli,
+braň nás v boji proti zlobě a úkladům ďáblovým.
+Kníže nebeského vojska,
+svrhni božskou mocí do pekelné propasti
+satana a zlé duchy, kteří usilují o zkázu duší.
+Amen.
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_svaty_michaeli_starsi_nadpis">
+    <![CDATA[
+<b>Svatý Michaeli, archanděli (starší verze)</b>
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_svaty_michaeli_starsi">
+    <![CDATA[
+Svatý Michaeli, archanděli, braň nás v boji!
+Proti zlobě a úkladům ďáblovým
+budiž nám záštitou,
+nechať Bůh přikáže jemu, pokorně prosíme!
+Ty pak, kníže vojska nebeského,
+Satana a jiné duchy zlé,
+kteří ke zkáze duší světem obcházejí,
+božskou mocí do pekla svrhni.
+Amen.
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_fatymsky_dodatek_zauzivana_nadpis">
+    <![CDATA[
+<b>Fatimský dodatek (zaužívaná verze)</b>
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_fatymsky_dodatek_zauzivana">
+    <![CDATA[
+Pane Ježíši, odpusť nám naše hříchy,
+uchraň nás pekelného ohně
+a přiveď do nebe všechny duše, zvláště ty,
+které tvého milosrdenství nejvíce potřebují.
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_fatymsky_dodatek_spravna_nadpis">
+    <![CDATA[
+<b>Fatimský dodatek (správná verze)</b>
+		]]>
+    </string>
+
+    <string name="dalsi_modlitby_fatymsky_dodatek_spravna">
+    <![CDATA[
+O můj Ježíši, odpusť nám naše hříchy,
+uchraň nás pekelného ohně
+a přiveď do nebe všechny duše, zvláště ty,
+které tvého milosrdenství nejvíce potřebují.
+		]]>
+    </string>
+
+    <string name="na_uvod_content">
+        <![CDATA[
+
+
+<h3>Úvod k aplikaci:</h3>
+
+Tato aplikace vychází z drobné knížky Růženec z nakladatelství Paulínky. Byla však
+částečně pozměněna – rozšířena o popis struktury modlitby růžence a několik dalších modliteb.
+Nejedná se jen o tradiční růženec; aplikace nabízí i modlitbu růžence s úryvky Písma pro každý den v týdnu.
+Na žádosti mnoha lidí, kteří se nemají s kým modlit, se připravuje i audio stopa (ve spolupráci s Radiem
+Proglas).
+
+<br><br>
+
+Chcete-li získat tištěnou verzi aplikace, můžete si ji objednat v e-shopu Paulínky nebo v knihkupectvích
+s nabídkou křesťanské literatury:<br>
+<a href="http://www.paulinky.cz/obchod/produkt/Ruzenec-1.html">http://www.paulinky.cz/</a>
+
+<br><br>
+
+Na Radiu Proglas naladíte modlitbu růžence v pondělí (radostný) a ve středu (slavný) v 18:00.
+Modlitbu živého růžence v úterý (bolestný), ve čtvrtek (růženec světla), v pátek (bolestný)
+a v sobotu (slavný) od 22:30. Do modlitby Živého růžence se můžete zapojit i Vy. Stačí když se
+dovoláte během modlitby (tedy mezi 22:30 a 23.00) na telefonní číslo
+<b><a href="tel:+420543217242">543 217 242</a></b>.
+
+        <br><br>
+        Výběr textu:<br>
+        Anna Penna FSP<br><br>
+        © Nakladatelství PAULÍNKY, 2010  <br>
+        Petrská 9, 110 00 Praha 1
+
+        <br><br>
+
+        © Program: <br>
+        Aleš Janalík<br>
+        ]]>
+    </string>
+
+    <string name="jak_se_pouziva_content">
+        <![CDATA[
+
+
+<h3>Stručný návod</h3>
+Aplikace růženec byla navržena, aby její ovládání bylo co nejjednodušší. Následný popis rozložím do jednotlivých obrazovek.<br><br>
+
+ ÚVODNÍ OBRAZOVKA<br>
+ Co se týče úvodního obrázku, tak můžete počkat, až zmizí sám nebo prostě klepněte na displej a on zmizí.<br><br>
+
+ VÝBĚR RŮŽENCE<br>
+ Zde máte možnost volit jeden ze čtyř růženců. Bílý text je použit u toho růžence, který je zrovna aktuální.<br><br>
+
+ VYBRANÝ RŮŽENEC<br>
+ Pokud si rozkliknete růženec, můžete se pohybem vlevo či vpravo pohybovat mezi jednotlivými tajemstvími. Co se týče ikon nahoře, stačí na nich
+ dlouze podržet prst a dozvíte se, k čemu slouží.<br><br>
+
+ Tedy je tu SYMBOL OKA, který slouží pro zobrazení či skrytí textu. Tedy těm, kteří dobře znají
+ růženec postačí doprovodné texty. Ostatní mají k dispozici veškerý text. <br><br>
+
+Každý desátek je zakončen INVOKACÍ K PANNĚ MARII. Tyto invokace jsou převzaty z tištěné knížky
+a shrnují obsah meditovaného tajemství a úryvku Písma. <br><br>
+
+ OSTATNÍ<br>
+ Další možnosti skýtá menu, které je ukryté pod třemi tečkami vpravo nahoře. Zde si můžete změnit velikost textu, přečíst slovo papeže či zobrazit
+ další vhodné modlitby.
+        ]]>
+
+
+    </string>
+
+    <string name="otcenas_zdravas">
+        <![CDATA[
+<b>Otče náš</b>, jenž jsi na nebesích,
+posvěť se jméno tvé.
+Přijď království tvé.
+Buď vůle tvá jako v nebi, tak i na zemi.
+Chléb náš vezdejší dej nám dnes.
+A odpusť nám naše viny,
+jako i my odpouštíme našim viníkům.
+A neuveď nás v pokušení,
+ale zbav nás od zlého.
+Amen.
+<br><br>
+(10x) <b>Zdrávas, Maria</b>, milosti plná,
+Pán s tebou;
+požehnaná ty mezi ženami
+a požehnaný plod života tvého, Ježíš,
+                ]]>
+    </string>
+
+    <string name="fatimsky_dodatek">
+        <![CDATA[
+            Pane Ježíši, odpusť nám naše hříchy, uchraň nás pekelného ohně a přiveď do nebe všechny duše, zvláště ty, které tvého milosrdenství nejvíce potřebují.
+            <br>
+        ]]>
+    </string>
+
+
+
+    <string name="svata_slava">
+        <![CDATA[
+
+Svatá Maria, Matko Boží,
+pros za nás hříšné
+nyní i v hodinu smrti naší.
+Amen.
+<br><br>
+
+<b>Sláva Otci</b> i Synu i Duchu svatému,
+jako byla na počátku, i nyní, i vždycky
+a na věky věků.
+Amen.<br>
+                ]]>
+    </string>
+
+    <string name="tajemstvi_radost">tajemství radostného růžence</string>
+    <string name="tajemstvi_bolest">tajemství bolestného růžence</string>
+    <string name="tajemstvi_slava">tajemství slavného růžence</string>
+    <string name="tajemstvi_svetlo">tajemství růžence světla</string>
+
+    <!-- radostný růženec -->
+    <string-array name="nazev_radost">
+        <item>KTERÉHO JSI Z DUCHA SVATÉHO POČALA</item>
+        <item>S KTERÝM JSI ALŽBĚTU NAVŠTÍVILA</item>
+        <item>KTERÉHO JSI V BETLÉMĚ PORODILA</item>
+        <item>KTERÉHO JSI V CHRÁMĚ OBĚTOVALA</item>
+        <item>KTERÉHO JSI V CHRÁMĚ NALEZLA</item>
+    </string-array>
+
+    <string-array name="hlavni_text_radost">
+        <item>\nAnděl k ní vešel a řekl: „Buď zdráva, milostiplná! Pán s tebou!“ Když to slyšela, ulekla se a uvažovala, co
+má ten pozdrav znamenat. Anděl jí řekl: „Neboj se, Maria, neboť jsi nalezla milost u Boha. Počneš a porodíš
+syna a dáš mu jméno Ježíš.“ Maria řekla: „Jsem služebnice Páně: ať se mi stane podle tvého slova!“ A anděl
+            od ní odešel.</item>
+        <item>\nV těch dnech se Maria vydala na cestu a spěchala do jednoho judského města v horách. Vešla do
+Zachariášova domu a pozdravila Alžbětu. Jakmile Alžběta uslyšela Mariin pozdrav, dítě se radostně pohnulo
+v jejím lůně. Alžběta byla naplněna Duchem Svatým a zvolala mocným hlasem: „Požehnaná tys mezi
+            ženami a požehnaný plod života tvého!“</item>
+        <item>\nV těch dnech vyšlo nařízení od císaře Augusta, aby se v celé říši provedlo sčítání lidu. Šli tedy všichni, aby
+se dali zapsat, každý do svého města. Také Josef se odebral z galilejského města Nazareta vzhůru do Judska
+do města Davidova, které se jmenuje Betlém, protože byl z rodu a kmene Davidova, aby se dal zapsat spolu
+s Marií, sobě zasnoubenou ženou, která byla v požehnaném stavu. Když tam byli, naplnil se jí čas, kdy měla
+porodit. A porodila svého prvorozeného syna, zavinula ho do plének a položila do jeslí, protože v zájezdním
+útulku nebylo pro ně místo.</item>
+        <item>\nKdyž nadešel den jejich očišťování podle Mojžíšova Zákona, přinesli Ježíše do Jeruzaléma, aby ho
+představili Pánu, jak je psáno v Zákoně Páně: „Všechno prvorozené mužského rodu ať je zasvěceno Pánu!“
+Přitom chtěli také podat oběť, jak je to nařízeno v Zákoně Páně: pár hrdliček nebo dvě holoubata.</item>
+        <item>\nKdyž mu bylo dvanáct let, vydali se tam na svátky jako obvykle. A když ukončili sváteční dni a vraceli se
+domů, zůstal chlapec Ježíš v Jeruzalémě, a jeho rodiče to nezpozorovali. Po třech dnech ho našli v chrámě,
+jak sedí uprostřed učitelů, poslouchá je a dává jim otázky. Všichni, kdo ho slyšeli, žasli nad jeho chápavostí
+a nad jeho odpověďmi.</item>
+    </string-array>
+
+    <string-array name="odkaz_radost">
+        <item>(Lk 1,28&#8211;31.38)\n</item>
+        <item>(Lk 1,39&#8211;42)\n</item>
+        <item>(Lk 2,1.3&#8211;7)\n</item>
+        <item>(Lk 2,22&#8211;24)\n</item>
+        <item>(Lk 2,42&#8211;43.46&#8211;47)\n</item>
+    </string-array>
+
+    <string-array name="dodatek_radost">
+        <item><b>Maria, plná milosti</b>, pomáhej nám v každodenních situacích našeho života rozeznávat Boží světlo, abychom
+stejně jako ty dokázali na Boží vůli ochotně odpovídat svým „ano“. Amen.</item>
+        <item><b>Blahoslavená Panno</b>, povzbuzuj nás k ochotě vůči Bohu a vůči bratrům a sestrám, které denně potkáváme.
+Amen.</item>
+        <item><b>Svatá Boží Matko</b>, nauč nás poznávat a přijímat tvého Syna v našich bratrech a sestrách, aby náš život
+pronikala přítomnost Boha, jenž se stal jedním z nás. Amen.</item>
+        <item><b>Svatá Panno</b>, pomáhej nám, ať se nevyhýbáme Božím cestám, ale s pokorou přijímáme Boží vůli, aby se tak
+celý náš život stal znamením Boží přítomnosti pro všechny, kdo ho hledají. Amen.</item>
+        <item><b>Pokorná nazaretská dívko</b>, vypros nám, ať se nikdy nestydíme za svou víru a ať všude svým životem
+svědčíme o kráse evangelia. Amen.</item>
+    </string-array>
+
+
+
+    <!-- bolestný růženec -->
+
+    <string-array name="nazev_bolest">
+        <item>KTERÝ SE PRO NÁS KRVÍ POTIL</item>
+        <item>KTERÝ BYL PRO NÁS BIČOVÁN</item>
+        <item>KTERÝ BYL PRO NÁS TRNÍM KORUNOVÁN</item>
+        <item>KTERÝ PRO NÁS NESL TĚŽKÝ KŘÍŽ</item>
+        <item>KTERÝ BYL PRO NÁS UKŘIŽOVÁN</item>
+    </string-array>
+
+    <string-array name="hlavni_text_bolest">
+        <item>\nPotom s nimi šel Ježíš na venkovský dvorec zvaný Getsemany a řekl učedníkům: „Poseďte tady, zatímco se
+půjdu tamhle pomodlit.“ Petra a dva Zebedeovy syny vzal s sebou. Pak se ho zmocnil smutek a úzkost. Řekl
+jim: „Má duše je smutná až k smrti, zůstaňte zde a bděte se mnou!“ Trochu poodešel, padl tváří k zemi a
+modlil se: „Otče můj, jestliže je to možné, ať mě mine tento kalich; avšak ne jak já chci, ale jak ty chceš.“</item>
+        <item>\nPilát jim namítl: „Ale co udělal špatného?“ Oni však křičeli ještě víc: „Ukřižuj ho!“ Pilát chtěl lidu vyhovět,
+proto jim propustil Barabáše. Ježíše dal zbičovat a vydal ho, aby byl ukřižován.</item>
+        <item>\nVladařovi vojáci vzali Ježíše do vládní budovy a svolali k němu celou četu. Svlékli ho, přehodili mu
+nachově rudý plášť, upletli korunu z trní, vsadili mu ji na hlavu, do pravé ruky mu dali rákosovou hůl,
+klekali před ním a posmívali se mu: „Buď zdráv, židovský králi!“ Plivali na něj, brali mu hůl a bili ho po
+hlavě.</item>
+        <item>\nOn sám si nesl kříž a šel na místo zvané Lebka, hebrejsky Golgota. Tam ho ukřižovali a s ním ještě dva jiné,
+každého po jedné straně, a Ježíše uprostřed. Pilát dal také zhotovit a připevnit na kříž nápis v tomto znění:
+Ježíš Nazaretský, židovský král.</item>
+        <item>\nPotom, když Ježíš věděl, že už je všechno dokonáno, řekl ještě: „Žízním.“ Tak se mělo splnit Písmo. Stála
+tam nádoba plná octa. Nasadili tedy na yzop houbu naplněnou octem a podali mu ji k ústům. Když Ježíš
+přijal ocet, řekl: „Dokonáno je!“ Pak sklonil hlavu a skonal.</item>
+    </string-array>
+
+
+
+    <string-array name="odkaz_bolest">
+        <item>(Mt 26,36&#8211;39)\n</item>
+        <item>(Mk 15,14&#8211;15)\n</item>
+        <item>(Mt 27,27&#8211;30)\n</item>
+        <item>(Jan 19,17&#8211;19)\n</item>
+        <item>(Jan 19,28&#8211;30)\n</item>
+    </string-array>
+
+    <string-array name="dodatek_bolest">
+        <item><b>Matko Vykupitele</b>, buď nám nablízku v hodině naší zkoušky, pomáhej nám, abychom si navzájem pomáhali
+nést svá břemena, a dej, ať nikdy nepochybujeme o lásce Otcově. Amen.</item>
+        <item><b>Matko nejčistší</b>, pomáhej nám, abychom nikdy nebyli pro druhé příčinou utrpení, aby naše slova a skutky
+nikoho nezraňovaly. Uč nás tiché spoluúčasti a soucitu se všemi trpícími a vypros nám odvahu bojovat proti
+každému bezpráví. Amen.</item>
+        <item><b>Matko milosrdenství</b>, pomáhej nám v našem následování Ježíše, abychom tak jako on přinášeli svůj život
+jako dar skrze každodenní malé i velké projevy lásky. Amen.</item>
+        <item><b>Matko bolestná</b>, vlij do našich srdcí soucit s veškerou lidskou bídou, abychom se zmírňováním a utišováním
+bolestí svých bližních učili odpovědnosti za celé lidstvo. Amen.</item>
+        <item><b>Matko církve</b>, Ježíš umírající na kříži nám tě dal za Matku. Zůstávej s námi, abychom následováním Ježíše
+dávali svůj život za své bratry, a budovali tak už na zemi království pokoje. Amen.</item>
+    </string-array>
+
+
+    <!-- slavný růženec -->
+
+    <string-array name="nazev_slava">
+        <item>KTERÝ Z MRTVÝCH VSTAL</item>
+        <item>KTERÝ NA NEBE VSTOUPIL</item>
+        <item>KTERÝ DUCHA SVATÉHO SESLAL</item>
+        <item>KTERÝ TĚ, PANNO, DO NEBE VZAL</item>
+        <item>KTERÝ TĚ V NEBI KORUNOVAL</item>
+    </string-array>
+
+    <string-array name="hlavni_text_slava">
+        <item>\nKdyž bylo po sobotě, Marie Magdalská, Jakubova matka Marie a Salome nakoupily vonné oleje, aby ho šly pomazat. Vešly do hrobky a uviděly tam na pravé straně sedět mladého muže oděného bílým rouchem a polekaly se. On však jim řekl: „Nelekejte se! Hledáte Ježíše Nazaretského, ukřižovaného. Byl vzkříšen, není tady. Zde je to místo, kam ho položili.“</item>
+        <item>\nVyvedl je pak směrem k Betánii, zvedl ruce a požehnal jim. A zatímco jim žehnal, odloučil se od nich a vznášel se k nebi. Oni se mu poklonili a s velikou radostí se vrátili do Jeruzaléma.</item>
+        <item>\nNastal den letnic a všichni byli společně pohromadě. Najednou se ozval z nebe hukot, jako když se přižene silný vítr, a naplnil celý dům, kde se zdržovali. A ukázaly se jim jazyky jako z ohně, rozdělily se a nad každým z nich se usadil jeden. Všichni byli naplněni Duchem Svatým a začali mluvit cizími jazyky, jak jim Duch vnukal, aby promlouvali.</item>
+        <item>\nAle Kristus z mrtvých vstal, a to jako první z těch, kteří zesnuli. Protože smrt přišla skrze člověka, přijde skrze člověka také vzkříšení mrtvých. Jako totiž pro spojení s Adamem všichni propadli smrti, tak zase pro svoje spojení s Kristem všichni budou povoláni k životu. Ale každý v tom pořadí, jaké mu patří: na prvním místě je Kristus, pak ti, kteří jsou Kristovi, až přijde.</item>
+        <item>\nPak se objevilo na nebi veliké znamení: žena oděná sluncem, s měsícem pod nohama a s korunou z dvanácti hvězd kolem hlavy. Byla v jiném stavu a křičela v bolestech a v mukách před porodem. A porodila syna, chlapce, toho, který má vládnout všem národům železným prutem. Avšak její dítě bylo uchváceno do nebe k Bohu, k jeho trůnu.</item>
+    </string-array>
+
+    <string-array name="odkaz_slava">
+        <item>(Mk 16,1.5&#8211;6)\n</item>
+        <item>(Lk 24,50&#8211;52)\n</item>
+        <item>(Sk 2,1&#8211;4)\n</item>
+        <item>(1 Kor 15,20&#8211;23)\n</item>
+        <item>(Zj 12,1&#8211;2.5)\n</item>
+    </string-array>
+
+    <string-array name="dodatek_slava">
+        <item><b>Maria, Bráno nebeská</b>, pomáhej nám růst ve víře v sílu Boží lásky, která vítězí nad smrtí,
+            a dej, abychom ji s radostí hlásali světu. Amen.</item>
+        <item><b>Maria, Zrcadlo věčnosti</b>, ty v nás vzbuzuješ touhu po Božích věcech. Pomáhej nám, abychom
+            i uprostřed každodenních starostí upírali svůj pohled k nebi. Amen.</item>
+        <item><b>Hvězdo mořská</b>, ty jsi pomáhala rodící se církvi svou modlitbou a útěchou. Dej, ať společenství
+            věřících nikdy nechybí tvoje opora, a pomáhej nám přijímat dary Ducha Svatého a rozeznávat to, co pochází od Boha. Amen.</item>
+        <item><b>Královno andělů</b>, připomínáš nám slavný osud, jenž Bůh připravil pro naši duši i pro tělo.
+            Pomáhej nám znovu navracet důstojnost každé lidské osobě, zvláště těm, kdo žijí na okraji společnosti
+            a jsou různými způsoby vykořisťováni. Amen.</item>
+        <item><b>Královno nebe</b>, jež přebýváš ve věčné blaženosti, pohlédni na všechny rodiny, které prožívají starosti a zkoušky.
+            Ať jim svým úsilím přispíváme na pomoc a celý náš život ať je k chvále Nejsvětější Trojice. Amen.</item>
+    </string-array>
+
+
+    <!-- růženec světla -->
+
+
+    <string-array name="nazev_svetlo">
+        <item>KTERÝ BYL POKŘTĚN V JORDÁNU</item>
+        <item>KTERÝ ZJEVIL V KÁNĚ SVOU BOŽSKOU MOC</item>
+        <item>KTERÝ HLÁSAL BOŽÍ KRÁLOVSTVÍ A VYZÝVAL K OBRÁCENÍ</item>
+        <item>KTERÝ NA HOŘE PROMĚNĚNÍ ZJEVIL SVOU SLÁVU</item>
+        <item>KTERÝ USTANOVIL EUCHARISTII</item>
+    </string-array>
+
+    <string-array name="hlavni_text_svetlo">
+        <item>\nV těch dnech přišel Ježíš z Nazareta v Galileji a dal se od Jana v Jordáně pokřtít. Hned jak vystupoval z vody, spatřil, že se nebe rozevřelo a že se na něho snáší Duch jako holubice. A z nebe se ozval hlas: „Ty jsi můj milovaný Syn, v tobě mám zalíbení!“</item>
+        <item>\nByla svatba v galilejské Káně a byla tam Ježíšova matka. Na tu svatbu byl pozván také Ježíš a jeho učedníci. Došlo víno, a proto řekla matka Ježíšovi: „Už nemají víno.“ A služebníkům: „Udělejte všechno, co vám řekne.“ Ježíš řekl služebníkům: „Naplňte džbány vodou!“ Naplnili je až po okraj. A nařídil jim: „Teď naberte a doneste správci svatby!“ Správce svatby okusil vodu proměněnou ve víno… To byl v galilejské Káně počátek znamení, která Ježíš učinil.</item>
+        <item>\nKdyž byl Jan Křtitel uvězněn, přišel Ježíš do Galileje a hlásal tam Boží evangelium: „Naplnil se čas a přiblížilo se Boží království. Obraťte se a věřte evangeliu!“</item>
+        <item>\nPo šesti dnech vzal Ježíš s sebou Petra, Jakuba a jeho bratra Jana a vyvedl je na vysokou horu, aby byli sami. A byl před nimi proměněn: jeho tvář zazářila jako slunce a jeho oděv zbělel jako světlo.</item>
+        <item>\nPotom vzal chléb, vzdal díky, lámal ho a dával jim se slovy: „To je mé tělo, které se za vás vydává. To konejte na mou památku!“ Stejně tak vzal i kalich, když bylo po večeři, a řekl: „Tento kalich je nová smlouva zpečetěná mou krví, která se za vás prolévá.“</item>
+    </string-array>
+
+    <string-array name="odkaz_svetlo">
+        <item>(Mk 1,9&#8211;11)\n</item>
+        <item>(Jan 2,1&#8211;3.5.7&#8211;9.11)\n</item>
+        <item>(Mk 1,14&#8211;15)\n</item>
+        <item>(Mt 17,1&#8211;2)\n</item>
+        <item>(Lk 22,19&#8211;20)\n</item>
+    </string-array>
+
+    <string-array name="dodatek_svetlo">
+        <item><b>Zvěstovatelko světla</b>, pomáhej nám na cestě následování Krista, abychom v něm nalezli slova života a smysl našeho putování,
+            a aby i v nás mohl Otec rozpoznat svého milovaného Syna. Amen.</item>
+        <item><b>Maria, požehnaná mezi ženami</b>, tvoje vnímavost a pozornost vůči všem nuzným nás vybízí otevřít oči, abychom nehledali štěstí sami,
+            ale v lásce rozpoznávali své bližní. Pomáhej nám, abychom naslouchali hlasu tvého Syna, a především uváděli jeho slovo do života. Amen.</item>
+        <item><b>Hvězdo jitřní</b>, Útočiště hříšníků, ať tvá přítomnost v našem životě rozhání všechny mraky a temnoty a bezpečně nás provází k branám
+            Božího království. Amen.</item>
+        <item><b>Panno slavná</b>, toužíme následovat Ježíše nejen v jeho slávě, ale rovněž na cestě křížové.
+            Ať v našem životě nechybí chvíle radosti, jež upevňují naši víru v radost života věčného. Amen.</item>
+        <item><b>Přesvatá Panno</b>, tvůj Syn se stává naším pokrmem, aby nás posiloval na naší cestě a učinil nás hodnými svého Otce.
+            Uč nás dělat z našeho života bezvýhradný dar. Amen.</item>
+    </string-array>
+
+    <string name="title_activity_ruzenec_tab">ActivityRuzenecTab</string>
+    <string name="title_activity_tab_ruzenec">ActivityTabRuzenec</string>
+    <string name="tajemstvi">%1$d. tajemství</string>
+    <string name="mezera">\n\n</string>
+
+    <string name="kriz_desatek">
+    Ve jménu Otce i Syna i Ducha Svatého. Amen.
+    </string>
+
+    <string name="uvod">
+     		<![CDATA[
+    Ve jménu Otce i Syna i Ducha Svatého. Amen.<br><br>
+
+
+    <b>Věřím v Boha</b>, Otce všemohoucího, Stvořitele nebe i země.
+        I v Ježíše Krista, Syna jeho Jediného, Pána našeho;
+        jenž se počal z Ducha Svatého, narodil se z Marie Panny,
+        trpěl pod Ponciem Pilátem, ukřižován umřel i pohřben jest;
+        sestoupil do pekel, třetího dne vstal z mrtvých;
+        vstoupil na nebesa, sedí po pravici Boha, Otce všemohoucího;
+        odtud přijde soudit živé i mrtvé.
+        Věřím v Ducha Svatého, svatou církev obecnou, 
+        společenství svatých, odpuštění hříchů,
+        vzkříšení těla a život věčný. Amen.<br><br>
+
+    <b>Otče náš</b>, jenž jsi na nebesích,
+        posvěť se jméno tvé.
+        Přijď království tvé.
+        Buď vůle tvá jako v nebi, tak i na zemi.
+        Chléb náš vezdejší dej nám dnes.
+        A odpusť nám naše viny,
+        jako i my odpouštíme našim viníkům.
+        A neuveď nás v pokušení,
+        ale zbav nás od zlého.
+        Amen.<br><br>
+
+    <b>Zdrávas, Maria</b>, milosti plná, Pán s tebou; požehnaná ty mezi ženami a požehnaný plod života tvého, Ježíš, <b>v kterého věříme</b>;<br>
+        Svatá Maria, Matko Boží, pros za nás hříšné nyní i v hodinu smrti naší. Amen.<br><br>
+
+            <b>Zdrávas, Maria</b>, milosti plná, Pán s tebou; požehnaná ty mezi ženami a požehnaný plod života tvého, Ježíš, <b>v kterého doufáme</b>;<br>
+        Svatá Maria, Matko Boží, pros za nás hříšné nyní i v hodinu smrti naší. Amen.<br><br>
+
+            <b>Zdrávas, Maria</b>, milosti plná, Pán s tebou; požehnaná ty mezi ženami a požehnaný plod života tvého, Ježíš, <b>kterého nade všechno milujeme</b>;<br>
+        Svatá Maria, Matko Boží, pros za nás hříšné nyní i v hodinu smrti naší. Amen.<br><br>
+
+    <b>Sláva Otci</b> i Synu i Duchu Svatému,
+        jako byla na počátku, i nyní, i vždycky
+        a na věky věků. Amen.<br><br>
+
+                ]]>
+    </string>
+
+    <string name="zaver">
+        <![CDATA[
+        <br>
+<b>Zdrávas, Královno</b>, Matko milosrdenství,
+živote, sladkosti a naděje naše, buď zdráva!
+K tobě voláme, vyhnaní synové Evy,
+k tobě vzdycháme, lkajíce a plačíce
+v tomto slzavém údolí.
+A proto, orodovnice naše,
+obrať k nám své milosrdné oči
+a Ježíše, požehnaný plod života svého,
+nám po tomto putování ukaž,
+ó milostivá, ó přívětivá,
+ó přesladká Panno Maria!<br><br>
+
+Oroduj za nás, Královno posvátného růžence,
+aby nám Kristus dal účast na svých zaslíbeních.<br><br>
+
+<b>Modleme se:</b><br>
+Bože, tvůj jednorozený Syn nám svým narozením, životem, smrtí a zmrtvýchvstáním získal věčnou spásu. Dej nám,
+prosíme, když v posvátném růženci blahoslavené Panny Marie o těchto tajemstvích rozjímáme, ať také
+podle nich žijeme a dosáhneme toho, co slibují. Skrze Krista, našeho Pána. Amen.
+        ]]>
+    </string>
+
+
+</resources>

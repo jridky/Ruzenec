@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#607D8B</color>
+
+    <color name="svetloBar">#ffcc80</color>
+    <color name="svetloText">#D32F2F</color>
+    <color name="svetloBackground">#FFF9C4</color>
+    <color name="svetloAccent">#FFEB3B</color>
+
+    <color name="radostBar">#79c3e4</color>
+    <color name="radostText">#3F51B5</color>
+    <color name="radostBackground">#b2def2</color>
+    <color name="radostAccent">#2196F3</color>
+
+    <color name="bolestBar">#e57373</color>
+    <color name="bolestText">#F44336</color>
+    <color name="bolestBackground">#FFCDD2</color>
+    <color name="bolestAccent">#FFA000</color>
+
+    <color name="slavaBar">#66bb6a</color>
+    <color name="slavaText">#4CAF50</color>
+    <color name="slavaBackground">#DCEDC8</color>
+    <color name="slavaAccent">#CDDC39</color>
+
+    <color name="pozadi">#FFFFFF</color>
+    <color name="ramecekObyc">#ffffff</color>
+    <color name="ramecekVyrazny">#000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#dddd</color>
+    <color name="dkgray">#333333</color>
+
+
+    <color name="colorTransBg">#26000000</color>
+</resources>

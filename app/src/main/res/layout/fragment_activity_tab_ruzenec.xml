@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cz.appkypaulinky.ruzenec2.ActivityTabRuzenec$PlaceholderFragment"
+    android:id="@+id/LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/uvod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:textColor="@color/black"/>
+
+
+
+            <TextView
+                android:id="@+id/tajemstvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/nazev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/hlavni_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/odkaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/otcenas_zdravas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+
+            <cz.appkypaulinky.ruzenec2.MyCustomView
+                android:id="@+id/custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"/>
+
+            <TextView
+                android:id="@+id/svata_slava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/fatimsky_dodatek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/dodatek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/zaver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:onClick="nextPage"/>
+
+            <TextView
+                android:id="@+id/mezera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mezera"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

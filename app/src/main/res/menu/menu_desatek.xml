@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_text_size_change"
+        android:title="@string/action_change_text_size"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_slovo_papeze"
+        android:title="Slovo papeže"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_dalsi_modlitby"
+        android:title="Další modlitby"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_about_app"
+        android:title="O aplikaci"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_jak_se_pouziva"
+        android:title="@string/action_jak_se_pouziva"
+        app:showAsAction="never"/>
+
+</menu>

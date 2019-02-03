@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.appkypaulinky.ruzenec2.ActivityEmpty">
+
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/im_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jak_se_modli_ruzenec"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

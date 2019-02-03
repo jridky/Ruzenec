@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDalsiModlitby">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_fatimsky_zauzivana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fatimaZauzivanaSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_fatimsky_zauzivana_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_fatimsky_spravna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fatimaSpravnaSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_fatimsky_spravna_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_pod_ochranu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="podOchranuSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_pod_ochranu_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_archandeli_novejsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="archandeliNovejsiSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_archandeli_novejsi_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_archandeli_starsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="archandeliStarsiSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_archandeli_starsi_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_litanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="litanieSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_litanie_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_zdrava_bud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zdravaBudSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_zdrava_bud_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_pamatuj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pamatujSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_pamatuj_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:text=""
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_zdravas_kralovno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zdravasKralovnoSwitch"
+            android:text="TextView"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <TextView
+            android:id="@+id/tv_zdravas_kralovno_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            android:paddingBottom="8dp"
+            android:textColor="@color/dkgray"/>
+
+        <!-- čára -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+</ScrollView>
