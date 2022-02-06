@@ -1,4 +1,4 @@
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/constraint"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineActionBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="64dp" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHlavniPomer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineActionBar"
         app:srcCompat="@drawable/ruzenec" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardViewRadost"
         app:cardElevation="@dimen/card_elevation"
         app:cardCornerRadius="@dimen/radius"
@@ -84,9 +84,9 @@
 
 
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardViewBolest"
         app:cardElevation="@dimen/card_elevation"
         app:cardCornerRadius="@dimen/radius"
@@ -132,11 +132,11 @@
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSlava"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardElevation="@dimen/card_elevation"
@@ -183,9 +183,9 @@
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSvetlo"
         app:cardElevation="@dimen/card_elevation"
         app:cardCornerRadius="@dimen/radius"
@@ -231,9 +231,9 @@
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineSpodniMezera"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -243,4 +243,4 @@
         app:layout_constraintGuide_end="64dp"
         app:layout_constraintStart_toStartOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

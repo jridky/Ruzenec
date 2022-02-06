@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
-        android:max="80"/>
+        android:max="80"
+        android:min="8"/>
 
     <TextView
         android:id="@+id/testText"
