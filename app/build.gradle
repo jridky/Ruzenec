@@ -1,14 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion '28.0.3'
+    compileSdk 34
     defaultConfig {
         applicationId "cz.appkypaulinky.ruzenec2"
         minSdkVersion 17
-        targetSdkVersion 31
-        versionCode 4
-        versionName "1.3"
+        targetSdkVersion 34
+        versionCode 5
+        versionName "1.4"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     compileOptions {
@@ -21,11 +20,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'cz.appkypaulinky.ruzenec2'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation 'androidx.appcompat:appcompat:1.4.1'

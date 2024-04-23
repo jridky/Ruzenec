@@ -67,7 +67,7 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
         FloatingActionButton fab;
         fab = findViewById(R.id.fab);
         //todo smazat následující řádek, až bude připravené audio
-        fab.setVisibility(View.GONE);
+        //fab.setVisibility(View.GONE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -220,42 +220,34 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
 
-        switch (item.getItemId()) {
-
-            case R.id.action_slovo_papeze:
-                intent = new Intent(this, ActivityEmpty.class);
-                intent.putExtra(TYP_TEXTU, SLOVO_PAPEZE);
-                startActivity(intent);
-                return true;
-
-            case R.id.action_jak_se_modli_ruzenec:
-                intent = new Intent(this, ActivityEmpty.class);
-                intent.putExtra(TYP_TEXTU, JAK_SE_MODLI_RUZENEC);
-                startActivity(intent);
-                return true;
-
-            case R.id.action_dalsi_modlitby:
-                intent = new Intent(this, ActivityDalsiModlitby.class);
-                intent.putExtra(TYP_TEXTU, DALSI_MODLITBY);
-                startActivity(intent);
-                return true;
-
-            case R.id.action_na_uvod:
-                intent = new Intent(this, ActivityEmpty.class);
-                intent.putExtra(TYP_TEXTU, NA_UVOD);
-                startActivity(intent);
-                return true;
-
-            case R.id.action_jak_se_pouziva:
-                intent = new Intent(this, ActivityEmpty.class);
-                intent.putExtra(TYP_TEXTU, JAK_SE_POUZIVA);
-                startActivity(intent);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_slovo_papeze) {
+            intent = new Intent(this, ActivityEmpty.class);
+            intent.putExtra(TYP_TEXTU, SLOVO_PAPEZE);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_jak_se_modli_ruzenec) {
+            intent = new Intent(this, ActivityEmpty.class);
+            intent.putExtra(TYP_TEXTU, JAK_SE_MODLI_RUZENEC);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_dalsi_modlitby) {
+            intent = new Intent(this, ActivityDalsiModlitby.class);
+            intent.putExtra(TYP_TEXTU, DALSI_MODLITBY);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_na_uvod) {
+            intent = new Intent(this, ActivityEmpty.class);
+            intent.putExtra(TYP_TEXTU, NA_UVOD);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_jak_se_pouziva) {
+            intent = new Intent(this, ActivityEmpty.class);
+            intent.putExtra(TYP_TEXTU, JAK_SE_POUZIVA);
+            startActivity(intent);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void vibrate(int x) {

@@ -39,9 +39,9 @@
     <!--todo upravit, až bude audio-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
-        android:visibility="gone"
-        android:layout_width="169dp"
-        android:layout_height="100dp"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_media_play" />
