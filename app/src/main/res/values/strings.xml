@@ -434,24 +434,15 @@ které tvého milosrdenství nejvíce potřebují.
 <h3>Úvod k aplikaci:</h3>
 
 Tato aplikace vychází z drobné knížky Růženec z nakladatelství Paulínky. Byla však
-částečně pozměněna – rozšířena o popis struktury modlitby růžence a několik dalších modliteb.
+částečně pozměněna – rozšířena o popis struktury modlitby růžence a několik dalších modliteb.<br><br>
 Nejedná se jen o tradiční růženec; aplikace nabízí i modlitbu růžence s úryvky Písma pro každý den v týdnu.
-Na žádosti mnoha lidí, kteří se nemají s kým modlit, se připravuje i audio stopa (ve spolupráci s Radiem
-Proglas).
+Na žádosti mnoha lidí, kteří se nemají s kým modlit, je k dispozici i <b>audio stopa</b> v aplikaci.
 
 <br><br>
 
 Chcete-li získat tištěnou verzi aplikace, můžete si ji objednat v e-shopu Paulínky nebo v knihkupectvích
 s nabídkou křesťanské literatury:<br>
-<a href="http://www.paulinky.cz/obchod/produkt/Ruzenec-1.html">http://www.paulinky.cz/</a>
-
-<br><br>
-
-Na Radiu Proglas naladíte modlitbu růžence v pondělí (radostný) a ve středu (slavný) v 18:00.
-Modlitbu živého růžence v úterý (bolestný), ve čtvrtek (růženec světla), v pátek (bolestný)
-a v sobotu (slavný) od 22:30. Do modlitby Živého růžence se můžete zapojit i Vy. Stačí když se
-dovoláte během modlitby (tedy mezi 22:30 a 23.00) na telefonní číslo
-<b><a href="tel:+420543217242">543 217 242</a></b>.
+<a href="https://www.paulinky.cz/ruzenec-paulinky/">http://www.paulinky.cz/</a>
 
         <br><br>
         Výběr textu:<br>
@@ -460,6 +451,11 @@ dovoláte během modlitby (tedy mezi 22:30 a 23.00) na telefonní číslo
         Petrská 9, 110 00 Praha 1
 
         <br><br>
+
+        Modlitby načetli:<br>
+        Dominik Synek<br>
+        Veronika Synková<br>
+        Štěpánka Zámečníková<br><br>
 
         © Program: <br>
         Aleš Janalík<br>Josef Řídký
@@ -486,6 +482,9 @@ Aplikace růženec byla navržena, aby její ovládání bylo co nejjednodušš�
  Tedy je tu SYMBOL OKA, který slouží pro zobrazení či skrytí textu. Tedy těm, kteří dobře znají
  růženec postačí doprovodné texty. Ostatní mají k dispozici veškerý text. <br><br>
 
+ V pravém dolním rohu naleznete tlačítko s IKONOU SLUCHÁTEK, kterým si můžete spustit audio stopu daného růžence. Chcete-li přehrávání přerušit nebo ukončit
+ stačí znovu kliknout na stejnou ikonu nebo ukončit aplikaci.<br><br>
+
 Každý desátek je zakončen INVOKACÍ K PANNĚ MARII. Tyto invokace jsou převzaty z tištěné knížky
 a shrnují obsah meditovaného tajemství a úryvku Písma. <br><br>
 
@@ -496,6 +495,46 @@ a shrnují obsah meditovaného tajemství a úryvku Písma. <br><br>
 
 
     </string>
+
+    <string name="paulinky">O Dcerách sv. Pavla</string>
+    <string name="about_paulinky"><![CDATA[
+            <p><b>Kdo jsme:</b><br>
+            • Řeholní kongregace Dcer sv. Pavla (paulínky)<br>
+            • Založena v Itálii v roce 1915<br>
+            • Schválena církví v roce 1953<br>
+            • Inspirována apoštolem Pavlem<br>
+            • Působíme ve více než 50 zemích světa<br>
+            • V ČR od roku 1993</p>
+
+            <p><b>Co děláme:</b><br>
+            • Nejčastěji spolupracujeme s křesťanskými médii a s katechety, jako hosté přispíváme k animaci farních nebo jiných skupin<br>
+            • Naše práce není byznys, ale apoštolát prožívaný v modlitbě</p>
+
+            <p><b>Naše poslání:</b><br>
+            • Hlásání evangelia všemi dostupnými prostředky<br>
+            • Tisk, rádio, televize, internet, audiovizuální nosiče, digitální média – to vše jsou prostředky a prostory naší práce a modlitby za ty, kdo v nich působí<br>
+            • Práce s médii je pro nás cestou k svatosti</p>
+
+            <p><b>Pořad z cyklu <i>Zasvěcení</i> České televize věnovaný Dcerám sv. Pavla:</b><br>
+            <a href="https://www.ceskatelevize.cz/porady/10213629490-zasveceni/210562213000003-paulinky/">ke shlédnutí</a></p>
+
+            <p><b>Každý den při adoraci se modlíme i&nbsp;za úmysly, které jsou nám svěřeny:</b><br><a href="https://www.paulinky.cz/prosim-o-modlitbu/">prosba o&nbsp;modlitbu</a></p>
+
+            <p><b>Jsme součástí Paulínské rodiny, do které ještě patří:</b><br>
+            • Mužská řeholní kongregace Společnost sv. Pavla<br>
+            • Další tři ženské kongregace se specifickým zaměřením<br>
+            • Čtyři sekulární instituty (pro svobodné muže a ženy, manžele a kněze)<br>
+            • Laické sdružení spolupracovníků</p>
+
+            <p>Kontaktní údaje:<br>
+            Kongregace Dcer sv. Pavla<br>
+            Petrská 9<br>
+            110 00 Praha 1<br>
+            <a href="mailto:paulinky@paulinky.cz">paulinky@paulinky.cz</a><br>
+            <a href="https://www.paulinky.cz">www.paulinky.cz</a><br>
+            <a href="http://www.paoline.org">www.paoline.org</a></p>
+
+            <p><b>Další aplikace od Paulínek</b> naleznete v obchodu <a href="https://play.google.com/store/apps/developer?id=Paul%C3%ADnky">Google Play</a>.]]></string>
 
     <string name="otcenas_zdravas">
         <![CDATA[

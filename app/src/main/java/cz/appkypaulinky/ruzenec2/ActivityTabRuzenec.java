@@ -46,6 +46,7 @@ import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.DRUH_RUZENCE;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.HNED_HRAT;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.JAK_SE_POUZIVA;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.NA_UVOD;
+import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.PAULINKY;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.POLE_ZVUKU;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.RADOSTNY;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.SLAVNY;
@@ -261,65 +262,61 @@ public class ActivityTabRuzenec extends AppCompatActivity implements MediaPlayer
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
 
-        switch (item.getItemId()) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_zobrazit_skryt_texty) {
+            SharedPreferences.Editor editor = prefs.edit();
+            if (jeVidetVse) {
+                item.setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_visibility_white_24dp));
+                editor.putBoolean("je vidět vše", false);
+                jeVidetVse = false;
+                editor.apply();
+                //kvůli projevům změny textu
+                int page = mViewPager.getCurrentItem();
+                mViewPager.setAdapter(mSectionsPagerAdapter);
+                mViewPager.setCurrentItem(page);
 
-            case R.id.action_zobrazit_skryt_texty:
-                SharedPreferences.Editor editor = prefs.edit();
-                if (jeVidetVse) {
-                    item.setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_visibility_white_24dp));
-                    editor.putBoolean("je vidět vše", false);
-                    jeVidetVse = false;
-                    editor.apply();
-                    //kvůli projevům změny textu
-                    int page = mViewPager.getCurrentItem();
-                    mViewPager.setAdapter(mSectionsPagerAdapter);
-                    mViewPager.setCurrentItem(page);
-
-                } else {
-                    item.setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_visibility_off_white_24dp));
-                    editor.putBoolean("je vidět vše", true);
-                    jeVidetVse = true;
-                    editor.apply();
-                    //kvůli projevům změny textu
-                    int page = mViewPager.getCurrentItem();
-                    mViewPager.setAdapter(mSectionsPagerAdapter);
-                    mViewPager.setCurrentItem(page);
-                }
-                return true;
-
-            case R.id.action_text_size_change:
-                intent = new Intent(ActivityTabRuzenec.this, ActivitySeekBar.class);
-                ActivityTabRuzenec.this.startActivity(intent);
-                return true;
-
-            case R.id.action_slovo_papeze:
-                intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
-                intent.putExtra("typ textu", SLOVO_PAPEZE);
-                ActivityTabRuzenec.this.startActivity(intent);
-                return true;
-
-            case R.id.action_dalsi_modlitby:
-                intent = new Intent(ActivityTabRuzenec.this, ActivityDalsiModlitby.class);
-                intent.putExtra("typ textu", DALSI_MODLITBY);
-                ActivityTabRuzenec.this.startActivity(intent);
-                return true;
-
-            case R.id.action_about_app:
-                intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
-                intent.putExtra("typ textu", NA_UVOD);
-                ActivityTabRuzenec.this.startActivity(intent);
-                return true;
-
-            case R.id.action_jak_se_pouziva:
-                intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
-                intent.putExtra("typ textu", JAK_SE_POUZIVA);
-                ActivityTabRuzenec.this.startActivity(intent);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-
+            } else {
+                item.setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_visibility_off_white_24dp));
+                editor.putBoolean("je vidět vše", true);
+                jeVidetVse = true;
+                editor.apply();
+                //kvůli projevům změny textu
+                int page = mViewPager.getCurrentItem();
+                mViewPager.setAdapter(mSectionsPagerAdapter);
+                mViewPager.setCurrentItem(page);
+            }
+            return true;
+        } else if (itemId == R.id.action_text_size_change) {
+            intent = new Intent(ActivityTabRuzenec.this, ActivitySeekBar.class);
+            ActivityTabRuzenec.this.startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_slovo_papeze) {
+            intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
+            intent.putExtra("typ textu", SLOVO_PAPEZE);
+            ActivityTabRuzenec.this.startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_dalsi_modlitby) {
+            intent = new Intent(ActivityTabRuzenec.this, ActivityDalsiModlitby.class);
+            intent.putExtra("typ textu", DALSI_MODLITBY);
+            ActivityTabRuzenec.this.startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_about_app) {
+            intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
+            intent.putExtra("typ textu", NA_UVOD);
+            ActivityTabRuzenec.this.startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_about_paulines) {
+            intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
+            intent.putExtra("typ textu", PAULINKY);
+            ActivityTabRuzenec.this.startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_jak_se_pouziva) {
+            intent = new Intent(ActivityTabRuzenec.this, ActivityEmpty.class);
+            intent.putExtra("typ textu", JAK_SE_POUZIVA);
+            ActivityTabRuzenec.this.startActivity(intent);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -553,7 +550,7 @@ public class ActivityTabRuzenec extends AppCompatActivity implements MediaPlayer
     }
 
     private void changeFabIconToPlay(FloatingActionButton fab) {
-        fab.setImageResource(R.mipmap.ic_play_arrow_white_24dp);
+        fab.setImageResource(R.drawable.headset);
     }
 
     @Override

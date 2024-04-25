@@ -26,6 +26,7 @@ import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.DALSI_MODLITBY;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.JAK_SE_MODLI_RUZENEC;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.JAK_SE_POUZIVA;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.NA_UVOD;
+import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.PAULINKY;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.SLOVO_PAPEZE;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.TYP_TEXTU;
 
@@ -107,6 +108,15 @@ public class ActivityEmpty extends AppCompatActivity {
                 }
                 break;
 
+            case PAULINKY:
+                setTitle(R.string.paulinky);
+                if (Build.VERSION.SDK_INT >= 24) {
+                    mainTextView.setText(Html.fromHtml(getResources().getString(R.string.about_paulinky), Html.FROM_HTML_MODE_LEGACY)); // for 24 api and more
+                } else {
+                    mainTextView.setText(Html.fromHtml(getResources().getString(R.string.about_paulinky))); // or for older api
+                }
+                break;
+
             default:
                 setTitle(R.string.action_o_aplikaci);
                 if (Build.VERSION.SDK_INT >= 24) {
@@ -135,22 +145,18 @@ public class ActivityEmpty extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
-        switch (item.getItemId()) {
-
-            case R.id.action_text_size_change:
-                Intent myIntent2 = new Intent(ActivityEmpty.this, ActivitySeekBar.class);
-                ActivityEmpty.this.startActivity(myIntent2);
-                return true;
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_text_size_change) {
+            Intent myIntent2 = new Intent(ActivityEmpty.this, ActivitySeekBar.class);
+            ActivityEmpty.this.startActivity(myIntent2);
+            return true;
 
             //pokud se klepne na tlačítko UP, tak se vrátí do předchozí aktivity, jako při klepnutí na zpět
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-
+        } else if (itemId == android.R.id.home) {
+            onBackPressed();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

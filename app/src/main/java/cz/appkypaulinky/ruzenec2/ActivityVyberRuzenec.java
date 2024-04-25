@@ -44,6 +44,7 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
     public static final int DALSI_MODLITBY = 5;
     public static final int JAK_SE_MODLI_RUZENEC = 6;
     public static final int JAK_SE_POUZIVA = 7;
+    public static final int PAULINKY = 8;
 
     public SharedPreferences prefs;
 
@@ -66,8 +67,7 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
         // FAB
         FloatingActionButton fab;
         fab = findViewById(R.id.fab);
-        //todo smazat následující řádek, až bude připravené audio
-        //fab.setVisibility(View.GONE);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -244,6 +244,11 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
         } else if (itemId == R.id.action_jak_se_pouziva) {
             intent = new Intent(this, ActivityEmpty.class);
             intent.putExtra(TYP_TEXTU, JAK_SE_POUZIVA);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.action_about_paulines) {
+            intent = new Intent(this, ActivityEmpty.class);
+            intent.putExtra(TYP_TEXTU, PAULINKY);
             startActivity(intent);
             return true;
         }

@@ -23,12 +23,15 @@
         android:title="Další modlitby"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/action_about_app"
-        android:title="O aplikaci"
-        app:showAsAction="never"/>
-
     <item android:id="@+id/action_jak_se_pouziva"
         android:title="@string/action_jak_se_pouziva"
         app:showAsAction="never"/>
-
+    <item
+        android:id="@+id/action_about_app"
+        android:title="O aplikaci"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about_paulines"
+        android:title="@string/paulinky"
+        app:showAsAction="never" />
 </menu>
