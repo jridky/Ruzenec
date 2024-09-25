@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import uk.co.senab.photoview.PhotoViewAttacher;
+
 
 import static cz.appkypaulinky.ruzenec2.ActivityIntroScreen.SHARED_PREFS;
 import static cz.appkypaulinky.ruzenec2.ActivityIntroScreen.TEXT_SIZE;
@@ -29,6 +29,8 @@ import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.NA_UVOD;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.PAULINKY;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.SLOVO_PAPEZE;
 import static cz.appkypaulinky.ruzenec2.ActivityVyberRuzenec.TYP_TEXTU;
+
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
 
 public class ActivityEmpty extends AppCompatActivity {
 

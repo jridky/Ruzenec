@@ -132,7 +132,7 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
         Generator generator = new Generator();
         vibrate(20);
         Intent intent = new Intent(this, ActivityTabRuzenec.class);
-        int[] audioResource = generator.pripravRuzenec(typRuzence);
+        int[] audioResource = generator.pripravRuzenec(typRuzence, (Calendar.getInstance().getTimeInMillis()%2) < 1);
         intent.putExtra(POLE_ZVUKU, audioResource);
         intent.putExtra(DRUH_RUZENCE, typRuzence);
         intent.putExtra(HNED_HRAT, hnedHrat);

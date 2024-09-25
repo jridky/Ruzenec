@@ -48,7 +48,6 @@ public class Generator {
 
     protected Generator() {
         naplnSeznamy();
-        zamichejSeznamy();
     }
 
     private void naplnSeznamy() {
@@ -174,57 +173,30 @@ public class Generator {
         amenList.add(R.raw.amen2);
     }
 
-    private void zamichejSeznamy() {
-        Collections.shuffle(krizList);
-        Collections.shuffle(verimListUvod);
-        Collections.shuffle(verimListZaver);
-        Collections.shuffle(otcenasListUvod);
-        Collections.shuffle(otcenasListZaver);
-        Collections.shuffle(zdravasList);
-        Collections.shuffle(svataList);
-        Collections.shuffle(tajUvodVerimeList);
-        Collections.shuffle(tajUvodDoufameList);
-        Collections.shuffle(tajUvodMilujemeList);
-        Collections.shuffle(slavaListUvod);
-        Collections.shuffle(slavaListZaver);
-        Collections.shuffle(fatimskyDodatek);
-        Collections.shuffle(kralovnoList);
-        Collections.shuffle(orodujListZaver);
-        Collections.shuffle(amenList);
-    }
-
     private void pridejTicho() {
         playlist.add(ticho.get(0));
-        Collections.shuffle(ticho);
     }
 
     private void pridejKriz() {
         playlist.add(krizList.get(0));
-        Collections.shuffle(krizList);
     }
 
     private void pridejVerim() {
         playlist.add(verimListUvod.get(0));
-        Collections.shuffle(verimListUvod);
         playlist.add(verimListZaver.get(0));
-        Collections.shuffle(verimListZaver);
     }
 
     private void pridejOtcenas() {
         playlist.add(otcenasListUvod.get(0));
-        Collections.shuffle(otcenasListUvod);
-        playlist.add(otcenasListZaver.get(0));
-        Collections.shuffle(otcenasListZaver);
+        playlist.add(otcenasListZaver.get(1));
     }
 
     private void pridejZdravas() {
         playlist.add(zdravasList.get(0));
-        Collections.shuffle(zdravasList);
     }
 
     private void pridejSvata() {
-        playlist.add(svataList.get(0));
-        Collections.shuffle(svataList);
+        playlist.add(svataList.get(1));
     }
 
     private void pridejTajUvodVerime() {
@@ -244,48 +216,46 @@ public class Generator {
 
     private void pridejSlava() {
         playlist.add(slavaListUvod.get(0));
-        Collections.shuffle(slavaListUvod);
-        playlist.add(slavaListZaver.get(0));
-        Collections.shuffle(slavaListZaver);
+        playlist.add(slavaListZaver.get(1));
     }
 
     private void pridejFatimskyDodatek() {
         playlist.add(fatimskyDodatek.get(0));
-        Collections.shuffle(fatimskyDodatek);
     }
 
     private void pridejHlavniText(int druhRuzence, int kteryDesatek) {
         if (druhRuzence == RADOSTNY) {
-            playlist.add(hlavniTextRadostList.get(kteryDesatek-1));
+            playlist.add(hlavniTextRadostList.get(kteryDesatek - 1));
         } else if (druhRuzence == BOLESTNY) {
-            playlist.add(hlavniTextBolestList.get(kteryDesatek-1));
+            playlist.add(hlavniTextBolestList.get(kteryDesatek - 1));
         } else if (druhRuzence == SLAVNY) {
-            playlist.add(hlavniTextSlavaList.get(kteryDesatek-1));
+            playlist.add(hlavniTextSlavaList.get(kteryDesatek - 1));
         } else { // SVETLA
-            playlist.add(hlavniTextSvetloList.get(kteryDesatek-1));
+            playlist.add(hlavniTextSvetloList.get(kteryDesatek - 1));
         }
     }
 
     private void pridejTajemstvi(int druhRuzence, int desatek) {
         if (druhRuzence == RADOSTNY) {
-            playlist.add(tajemstviRadostList.get(desatek-1));
+            playlist.add(tajemstviRadostList.get(desatek - 1));
         } else if (druhRuzence == BOLESTNY) {
-            playlist.add(tajemstviBolestList.get(desatek-1));
+            playlist.add(tajemstviBolestList.get(desatek - 1));
         } else if (druhRuzence == SLAVNY) {
-            playlist.add(tajemstviSlavaList.get(desatek-1));
+            playlist.add(tajemstviSlavaList.get(desatek - 1));
         } else { // SVETLA
-            playlist.add(tajemstviSvetloList.get(desatek-1));
+            playlist.add(tajemstviSvetloList.get(desatek - 1));
         }
     }
-        private void pridejDodatek(int druhRuzence, int kteryDesatek) {
+
+    private void pridejDodatek(int druhRuzence, int kteryDesatek) {
         if (druhRuzence == RADOSTNY) {
-            playlist.add(dodatekRadostList.get(kteryDesatek-1));
+            playlist.add(dodatekRadostList.get(kteryDesatek - 1));
         } else if (druhRuzence == BOLESTNY) {
-            playlist.add(dodatekBolestList.get(kteryDesatek-1));
+            playlist.add(dodatekBolestList.get(kteryDesatek - 1));
         } else if (druhRuzence == SLAVNY) {
-            playlist.add(dodatekSlavaList.get(kteryDesatek-1));
+            playlist.add(dodatekSlavaList.get(kteryDesatek - 1));
         } else { // SVETLA
-            playlist.add(dodatekSvetloList.get(kteryDesatek-1));
+            playlist.add(dodatekSvetloList.get(kteryDesatek - 1));
         }
     }
 
@@ -295,7 +265,7 @@ public class Generator {
 
     private void pridejOroduj() {
         playlist.add(orodujListUvod.get(0));
-        playlist.add(orodujListZaver.get(0));
+        playlist.add(orodujListZaver.get(1));
     }
 
     private void pridejZaverecnouModlitbu() {
@@ -304,7 +274,7 @@ public class Generator {
     }
 
     //*************************** tady probíhá hlavní příprava růžence + převod na klasické pole
-    protected int[] pripravRuzenec(int druhRuzence) {
+    protected int[] pripravRuzenec(int druhRuzence, boolean poradi) {
         vyprazdniPlaylist();
 
         //***************** úvod
@@ -321,7 +291,7 @@ public class Generator {
         for (int desatek = 1; desatek <= 5; desatek++) {
             pridejHlavniText(druhRuzence, desatek);
             pridejOtcenas();
-            for (int i = 0; i<10; i++) {
+            for (int i = 0; i < 10; i++) {
                 pridejZdravas();
                 pridejTajemstvi(druhRuzence, desatek);
                 pridejSvata();
@@ -337,7 +307,7 @@ public class Generator {
 
         // převedu na klasické pole int
         int[] pole = new int[playlist.size()];
-        for (int i=0; i<playlist.size(); i++) {
+        for (int i = 0; i < playlist.size(); i++) {
             pole[i] = playlist.get(i);
         }
         return pole;
@@ -346,31 +316,4 @@ public class Generator {
     private void vyprazdniPlaylist() {
         playlist.clear();
     }
-
-
-    public int[] pripravDesatek(int druhRuzence, int kteryDesatek) {
-        vyprazdniPlaylist();
-
-        pridejKriz();
-
-        pridejHlavniText(druhRuzence, kteryDesatek);
-        pridejOtcenas();
-        for (int i = 0; i<10; i++) {
-            pridejZdravas();
-            pridejTajemstvi(druhRuzence, kteryDesatek);
-            pridejSvata();
-        }
-        pridejSlava();
-        pridejFatimskyDodatek();
-        pridejDodatek(druhRuzence, kteryDesatek);
-
-        // převedu na klasické pole int
-        int[] pole = new int[playlist.size()];
-        for (int i=0; i<playlist.size(); i++) {
-            pole[i] = playlist.get(i);
-        }
-
-        return pole;
-    }
-
 }
