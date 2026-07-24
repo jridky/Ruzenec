@@ -3,7 +3,13 @@ package cz.appkypaulinky.ruzenec2;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -33,11 +39,28 @@ public class ActivityIntroScreen extends AppCompatActivity {
 //      schovám statusbar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        EdgeToEdge.enable(this);
+
 //      schovám ActionBar
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         getSupportActionBar().hide();
 
         setContentView(R.layout.activity_intro_screen);
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_root), (v, windowInsets) -> {
+            Insets systemBarsInsets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets cutoutInsets = windowInsets.getInsets(WindowInsetsCompat.Type.displayCutout());
+            WindowInsetsControllerCompat insetsController = WindowCompat.getInsetsController(getWindow(), v);
+            if (insetsController != null) {
+                insetsController.setAppearanceLightStatusBars(false);
+            }
+            v.setPadding(Math.max(systemBarsInsets.left, cutoutInsets.left),
+                         Math.max(systemBarsInsets.top, cutoutInsets.top),
+                         Math.max(systemBarsInsets.right, cutoutInsets.right),
+                         (systemBarsInsets.bottom < 100 ? 0 : systemBarsInsets.bottom));
+            return windowInsets;
+        });
 
         //otevřu preference a načtu viditelnost z minula
         prefs = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);

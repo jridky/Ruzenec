@@ -5,7 +5,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -43,7 +49,27 @@ public class ActivityEmpty extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_empty);
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_root), (v, windowInsets) -> {
+            Insets systemBarsInsets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets cutoutInsets = windowInsets.getInsets(WindowInsetsCompat.Type.displayCutout());
+            WindowInsetsControllerCompat insetsController = WindowCompat.getInsetsController(getWindow(), v);
+            if (insetsController != null) {
+                insetsController.setAppearanceLightStatusBars(false);
+            }
+            v.setPadding(Math.max(systemBarsInsets.left, cutoutInsets.left),
+                         Math.max(systemBarsInsets.top, cutoutInsets.top),
+                         Math.max(systemBarsInsets.right, cutoutInsets.right),
+                         (systemBarsInsets.bottom < 100 ? 0 : systemBarsInsets.bottom));
+            ScrollView sv = findViewById(R.id.scroll_view);
+            return windowInsets;
+        });
+
         Intent intent = getIntent();
         typTextu = intent.getIntExtra(TYP_TEXTU, NA_UVOD);
 
@@ -96,7 +122,7 @@ public class ActivityEmpty extends AppCompatActivity {
                 pAttacher.update();
 
                 //zároveň potřebuji změnit pozadí na černé
-                ScrollView sv = findViewById(R.id.sv_empty);
+                ScrollView sv = findViewById(R.id.scroll_view);
                 sv.setBackgroundColor(Color.BLACK);
 
                 break;

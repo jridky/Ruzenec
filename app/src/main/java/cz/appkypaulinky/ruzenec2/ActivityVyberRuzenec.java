@@ -10,9 +10,15 @@ import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import android.util.Log;
 import android.view.Display;
 import android.view.Menu;
@@ -52,12 +58,30 @@ public class ActivityVyberRuzenec extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_vyber_ruzenec);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_root), (v, windowInsets) -> {
+            Insets systemBarsInsets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets cutoutInsets = windowInsets.getInsets(WindowInsetsCompat.Type.displayCutout());
+            WindowInsetsControllerCompat insetsController = WindowCompat.getInsetsController(getWindow(), v);
+            if (insetsController != null) {
+                insetsController.setAppearanceLightStatusBars(false);
+            }
+            v.setPadding(Math.max(systemBarsInsets.left, cutoutInsets.left),
+                         Math.max(systemBarsInsets.top, cutoutInsets.top),
+                         Math.max(systemBarsInsets.right, cutoutInsets.right),
+                         0);
+            return windowInsets;
+        });
 
         prefs = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
 
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         zvyrazniAktualniDen();

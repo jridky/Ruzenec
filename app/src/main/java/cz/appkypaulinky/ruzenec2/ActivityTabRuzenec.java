@@ -11,9 +11,15 @@ import android.os.PowerManager;
 import android.os.Vibrator;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import androidx.activity.EdgeToEdge;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -91,7 +97,31 @@ public class ActivityTabRuzenec extends AppCompatActivity implements MediaPlayer
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_tab_ruzenec);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_root), (v, windowInsets) -> {
+            Insets systemBarsInsets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets cutoutInsets = windowInsets.getInsets(WindowInsetsCompat.Type.displayCutout());
+            WindowInsetsControllerCompat insetsController = WindowCompat.getInsetsController(getWindow(), v);
+            if (insetsController != null) {
+                insetsController.setAppearanceLightStatusBars(false);
+            }
+            v.setPadding(Math.max(systemBarsInsets.left, cutoutInsets.left),
+                         Math.max(systemBarsInsets.top, cutoutInsets.top),
+                         Math.max(systemBarsInsets.right, cutoutInsets.right),
+                         0);
+            ViewPager viewPager = v.findViewById(R.id.container);
+            viewPager.setPadding(viewPager.getPaddingLeft(), viewPager.getPaddingTop(),
+                                viewPager.getPaddingRight(), systemBarsInsets.bottom);
+            viewPager.setClipToPadding(false);
+            return windowInsets;
+        });
 
         prefs = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         textSize = prefs.getInt(TEXT_SIZE, 20);
@@ -107,7 +137,6 @@ public class ActivityTabRuzenec extends AppCompatActivity implements MediaPlayer
         boolean hnedHraj = intent.getBooleanExtra(HNED_HRAT, false);
         audioResourceId = intent.getIntArrayExtra(POLE_ZVUKU);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         try {

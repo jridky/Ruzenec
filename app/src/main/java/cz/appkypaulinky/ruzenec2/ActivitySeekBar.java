@@ -2,7 +2,13 @@ package cz.appkypaulinky.ruzenec2;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.SeekBar;
@@ -20,7 +26,25 @@ public class ActivitySeekBar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_seek_bar);
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_root), (v, windowInsets) -> {
+            Insets systemBarsInsets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+            Insets cutoutInsets = windowInsets.getInsets(WindowInsetsCompat.Type.displayCutout());
+            WindowInsetsControllerCompat insetsController = WindowCompat.getInsetsController(getWindow(), v);
+            if (insetsController != null) {
+                insetsController.setAppearanceLightStatusBars(false);
+            }
+            v.setPadding(Math.max(systemBarsInsets.left, cutoutInsets.left),
+                         Math.max(systemBarsInsets.top, cutoutInsets.top),
+                         Math.max(systemBarsInsets.right, cutoutInsets.right),
+                         (systemBarsInsets.bottom < 100 ? 0 : systemBarsInsets.bottom));
+            return windowInsets;
+        });
 
         prefs = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         textSize = prefs.getInt(TEXT_SIZE, 20);
